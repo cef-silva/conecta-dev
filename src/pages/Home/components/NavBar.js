@@ -1,10 +1,19 @@
 import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import Paper from '@material-ui/core/Paper'
+const useStyles = makeStyles({
+    root:{
+        padding:16,
+        width: 275
+    }
+});
 
 function NavBar(){
+    const classes = useStyles();
     return(
-        <div>
+        <Paper className={classes.root}>
             NavBar
-        </div>
+        </Paper>
     );
 }
 
